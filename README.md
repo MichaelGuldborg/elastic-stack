@@ -1,14 +1,12 @@
 # How to an elastick-stack with docker
 > The simplest way to get an elastic-stack for your .Net Core project
 
-*Straigth to the git repository?*
-
-[github.com/elastic-stack](https://github.com/MichaelGuldborg/elastic-stack)
+*Straigth to the git [repository](https://github.com/MichaelGuldborg/elastic-stack)?*
 
 ### Why you should setup an elastic-stack
 Why? I think if you're here you already know why but just to make sure that we're both on the same hype level I'll give you a small sneak peak at why you should be excited to get an elastic-stack up and running at full speed!
 
-<p float="center">
+<p align="center">
   <img src="/screenshots/kibana.png" width="600" />
 </p>
 
