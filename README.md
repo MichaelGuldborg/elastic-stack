@@ -1,17 +1,16 @@
 # How to an elastick-stack with docker
 > The simplest way to get an elastic-stack for your .Net Core project
 
-```
-# Straigth to the git repository?
-git clone git@github.com:MichaelGuldborg/elastic-stack.git
-```
+*Straigth to the git repository?*
+[github.com/elastic-stack](https://github.com/MichaelGuldborg/elastic-stack)
 
 ### Why you should setup an elastic-stack
+Why? I think if you're here you already know why but just to make sure that we're both on the same hype level I'll give you a small sneak peak at why you should be excited to get an elastic-stack up and running at full speed!
 
-Why? I think if you're here you already know why but just to make sure that we're both on the same hype level I'll give you a short rundown of why you should be excited to get an elastic-stack up and running at full speed!
+<p float="center">
+  <img src="/screenshots/kibana_dashboard.png" width="600" />
+</p>
 
-// TODO
-// screenshot API-dashboard, server-metrics
 
 ### Prerequisites
 Firstly, if you haven't already please make sure that you've installed both [docker](https://docs.docker.com/engine/install/ubuntu/) and [docker-compose](https://docs.docker.com/compose/install/)
@@ -25,7 +24,7 @@ I recommend that you setup an elastic-stack on a linux server with the following
 > Disk: 8 GB
 
 ### Clone, plug and play
-Now for the part you're actually here for, the git repository
+Now for the part you're actually here for, the [git repository](https://github.com/MichaelGuldborg/elastic-stack)
 ```
 git clone git@github.com:MichaelGuldborg/elastic-stack.git
 ```
@@ -62,7 +61,5 @@ One set of data that might be interesting to log to the elastic stack is your se
 ```
 docker-compose up --detach
 ```
-
 This data should show up in the *stack monitoring* section of kibana and have the name defined by the *METRICBEAT_NAME* environment variable.
 
-### Integrate .Net Core API application
