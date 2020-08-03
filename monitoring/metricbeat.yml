@@ -1,0 +1,24 @@
+metricbeat.config.modules:
+  path: ${path.config}/modules.d/*.yml
+  reload.period: 10s
+  reload.enabled: true
+processors:
+- add_docker_metadata: ~
+monitoring.enabled: true
+setup.ilm.enabled: false
+output.elasticsearch:
+  hosts: ["${ELASTICSEARCH_URL:localhost:9200}"]
+  index: "metricbeat-${METRICBEAT_NAME:default}-%{+yyyy.MM}"
+  username: "${ELASTIC_USERNAME:elastic}"
+  password: "${ELASTIC_PASSWORD:}"
+  
+logging.to_files: false
+setup:
+  kibana.host: "${KIBANA_URL:localhost:5602}"
+  dashboards.enabled: true
+
+
+setup.template:
+  name: "metricbeat-${METRICBEAT_NAME:default}"
+  pattern: 'metricbeat-${METRICBEAT_NAME:default}*'
+
