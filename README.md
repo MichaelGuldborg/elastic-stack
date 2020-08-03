@@ -2,14 +2,15 @@
 > The simplest way to get an elastic-stack for your .Net Core project
 
 *Straigth to the git repository?*
+
 [github.com/elastic-stack](https://github.com/MichaelGuldborg/elastic-stack)
 
 ### Why you should setup an elastic-stack
 Why? I think if you're here you already know why but just to make sure that we're both on the same hype level I'll give you a small sneak peak at why you should be excited to get an elastic-stack up and running at full speed!
 
-<div style="display: flex;justify-content: center; width: 100%;">
+<p float="center">
   <img src="/screenshots/kibana.png" width="600" />
-</div>
+</p>
 
 
 ### Prerequisites
